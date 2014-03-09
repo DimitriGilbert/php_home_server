@@ -1,0 +1,24 @@
+{
+	"extensions":{
+		"video":[
+			"avi",
+			"mp4",
+			"flv",
+			"mov",
+			"ogv",
+			"mkv",
+			"mpeg",
+			"wmv"
+		],
+		"music":[
+			"mp3",
+			"flac",
+			"ogg",
+			"wav",
+			"m4a",
+			"aac"
+		]
+	},
+	"base_url":"http://192.168.1.104/media",
+	"base_path":"/var/www/media/"
+}
