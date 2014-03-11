@@ -1,4 +1,5 @@
 {
+	// Whoooo are you, whoo whoo
 	"extensions":{
 		"video":[
 			"avi",
@@ -19,6 +20,8 @@
 			"aac"
 		]
 	},
+	// ooooo other the network, i am heeeeeere
 	"base_url":"http://192.168.1.104/media",
+	// and on the disk, i am theeeere, i am theeere
 	"base_path":"/var/www/media/"
 }

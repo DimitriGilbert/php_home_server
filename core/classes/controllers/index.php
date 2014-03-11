@@ -10,6 +10,7 @@ class Controller_Index extends Controller
 	*/
 	public function __construct()
 	{
+		// configuring the controller
 		$this->config=array(
 			'config'=>array(
 				'library'
@@ -22,7 +23,7 @@ class Controller_Index extends Controller
 	}
 
 	/**
-	*
+	* default controller action
 	*/
 	public function action_index()
 	{
@@ -41,7 +42,7 @@ class Controller_Index extends Controller
 	}
 
 	/**
-	*
+	* generating playlist file for vlc/realplayer/etc..
 	*/
 	public function action_vlc()
 	{
@@ -52,7 +53,7 @@ class Controller_Index extends Controller
 	}
 
 	/**
-	*
+	* one page player
 	*/
 	public function action_play()
 	{
@@ -63,7 +64,7 @@ class Controller_Index extends Controller
 	}
 
 	/**
-	*
+	* rescan the thedia folder to update the library cache
 	*/
 	public function action_rescan()
 	{

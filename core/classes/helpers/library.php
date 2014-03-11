@@ -20,23 +20,28 @@ class Library
 			//
 			if (!in_array($d, array('.', '..')))
 			{
-				// print_r($d);
 				//
 				if (is_dir($dir.'/'.$d))
 				{
+					// recursive call to go through directories.
 					$tmpc=self::cache_dir($dir.'/'.$d, $config);
-					// $cache['music']=array_merge($cache['music'], $tmpc['music']);
+
+					// of course we want to grab the fracking data we gathered !
+					$cache['music']=array_merge($cache['music'], $tmpc['music']);
 					$cache['video']=array_merge($cache['video'], $tmpc['video']);
 				}
 				else
 				{
+					// ASL ? #caramail_style
 					$info=pathinfo($dir.'/'.$d);
 					
+					// oh, so you are a video, nice !
 					if (in_array($info['extension'], $config['extensions']['video']))
 					{
 						$cache['video'][$info['filename']]=str_replace($config['base_path'], $config['base_url'], $dir.'/'.$d);
 					}
 					
+					// you damn audio file are so mean with me....
 					if (in_array($info['extension'], $config['extensions']['music']))
 					{
 						$cache['music'][$info['filename']]=str_replace($config['base_path'], $config['base_url'], $dir.'/'.$d);
@@ -44,7 +49,7 @@ class Library
 				}
 			}
 		}
-		// $cache=json_encode($cache);
+
 		return $cache;
 	}
 }

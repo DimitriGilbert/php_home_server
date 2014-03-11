@@ -1,13 +1,14 @@
 <?php
-
+// because i find it cool to see how little time it takes to process things :)
 $exec_start=microtime(true);
 
+// including the core class
 include_once __DIR__.'/classes/helpers/core.php';
 
+// instantiating the core class, duh !
 $core=new Core();
 
-include_once $core->config['core']['path'].'classes/helpers/view.php';
-
+// routing the request
 $core->route();
 
 // if ($this->core->config['core']['debug'])

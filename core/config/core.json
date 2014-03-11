@@ -1,5 +1,8 @@
 {
+	// you are here
 	"path":"/var/www/core/",
+	// talk to me for frack sake !
 	"debug":true,
+	// you migh be able to find me here :D
 	"base_url":"http://192.168.1.104/"
 }

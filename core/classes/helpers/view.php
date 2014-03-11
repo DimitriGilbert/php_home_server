@@ -7,7 +7,8 @@ class View
 {
 	
 	/**
-	* taken from fuelphp view classe
+	* taken from fuelphp view class
+	* yeah comment are really less fun other here !
 	*/
 	static public function render($file, $data)
 	{
